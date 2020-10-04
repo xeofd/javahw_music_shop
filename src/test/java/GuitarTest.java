@@ -52,4 +52,9 @@ public class GuitarTest {
         assertEquals(27.00, guitar.getMarkup(), 0.01);
     }
 
+    @Test // Test 8: Can play
+    public void canPlay() {
+        assertEquals("*Guitar noise*", guitar.play());
+    }
+
 }
