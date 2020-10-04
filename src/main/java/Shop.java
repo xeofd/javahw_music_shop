@@ -19,15 +19,19 @@ public class Shop {
     // Methods
 
     public String getShopName() {
-        return shopName;
+        return this.shopName;
     }
 
     public List<ISell> getStock() {
-        return stock;
+        return this.stock;
+    }
+
+    public int getStockCount() {
+        return this.stock.size();
     }
 
     public double getTill() {
-        return till;
+        return this.till;
     }
 
     public void setTill(double till) {

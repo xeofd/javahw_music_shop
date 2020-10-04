@@ -28,21 +28,26 @@ public class DigitalTonerTest {
 
     @Test // Test 3: Can set buyPrice
     public void canSetBuyPrice() {
-        digitalToner.setBuyPrice(10);
+        digitalToner.setBuyPrice(10.00);
 
-        assertEquals(10, digitalToner.getBuyPrice(), 0.01);
+        assertEquals(10.00, digitalToner.getBuyPrice(), 0.01);
     }
 
     @Test // Test 4: Can get sell price
     public void canGetSellPrice() {
-        assertEquals(50, digitalToner.getSellPrice(), 0.01);
+        assertEquals(50.00, digitalToner.getSellPrice(), 0.01);
     }
 
     @Test // Test 5: Can set sell price
     public void canSetSellPrice() {
-        digitalToner.setSellPrice(10);
+        digitalToner.setSellPrice(10.00);
 
-        assertEquals(10, digitalToner.getSellPrice(), 0.01);
+        assertEquals(10.00, digitalToner.getSellPrice(), 0.01);
+    }
+
+    @Test // Test 6: Can get markup
+    public void canGetMarkup() {
+        assertEquals(16.00, digitalToner.getMarkup(), 0.01);
     }
 
 }
