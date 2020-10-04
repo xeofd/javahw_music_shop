@@ -57,4 +57,17 @@ public class GuitarTest {
         assertEquals("*Guitar noise*", guitar.play());
     }
 
+    @Test // Test 9: Can set buy price
+    public void canSetBuyPrice() {
+        guitar.setBuyPrice(20.00);
+        assertEquals(20, guitar.getBuyPrice(), 0.01);
+    }
+
+    @Test // Test 10: Can set sell price
+    public void canSetSellPrice() {
+        guitar.setSellPrice(20.00);
+
+        assertEquals(20, guitar.getSellPrice(), 0.01);
+    }
+
 }

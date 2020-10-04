@@ -29,7 +29,7 @@ public class Glockenspiel extends Instrument {
     }
 
     public double getMarkup() {
-        return (this.getSellPrice() - this.getSellPrice());
+        return (this.getSellPrice() - this.getBuyPrice());
     }
 
 }

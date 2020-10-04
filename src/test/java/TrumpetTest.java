@@ -31,5 +31,5 @@ public class TrumpetTest {
     public void canGetMarkUp() {
         assertEquals(65.75, trumpet.getMarkup(), 0.01);
     }
-    
+
 }
