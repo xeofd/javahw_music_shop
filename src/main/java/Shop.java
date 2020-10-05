@@ -1,12 +1,13 @@
 import behaviours.ISell;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Shop {
 
     // Attributes
     private String shopName;
-    private List<ISell> stock;
+    private ArrayList<ISell> stock;
     private double till;
 
     // Constructor
@@ -14,6 +15,7 @@ public class Shop {
     public Shop(String shopName, double till) {
         this.shopName = shopName;
         this.till = till;
+        this.stock = new ArrayList<>();
     }
 
     // Methods
@@ -22,7 +24,7 @@ public class Shop {
         return this.shopName;
     }
 
-    public List<ISell> getStock() {
+    public ArrayList<ISell> getStock() {
         return this.stock;
     }
 

@@ -12,9 +12,9 @@ public class ShopTest {
 
     // Set up
     private Shop myShop;
-    private ISell guitar;
-    private ISell trumpet;
-    private ISell digitalToner;
+    private Guitar guitar;
+    private Trumpet trumpet;
+    private DigitalToner digitalToner;
 
     @Before
     public void before() {
